@@ -1,0 +1,213 @@
+/* General Page Styling */
+body {
+    background: url('czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGYtczEyNC10ZC03MTQwXzMuanBn.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Header & Navigation */
+header {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(102, 0, 0, 0.8));
+    padding: 20px 0;
+    box-shadow: 0px 6px 15px rgba(255, 0, 0, 0.5);
+    border-bottom: 3px solid #ffcc00;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    filter: drop-shadow(0px 0px 10px red);
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    font-family: 'Franklin Gothic Heavy', sans-serif;
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 22px;
+    letter-spacing: 2px;
+    padding: 12px 18px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    border-radius: 3px;
+    box-shadow: inset 0px 0px 5px rgba(255, 204, 0, 0.5);
+
+}
+
+nav a:hover {
+    background-color: #ffcc00;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(255, 204, 0, 0.9);
+    transform: scale(1.1);
+    margin-bottom: 100px;
+}
+
+/* Main Section */
+h1 {
+    font-family: 'Franklin Gothic Heavy', sans-serif;
+    font-size: 38px;
+    margin: 20px 0;
+    text-shadow: 3px 3px 10px rgba(255, 0, 0, 0.9);
+    letter-spacing: 2px;
+}
+
+sup {
+    font-size: 14px;
+    color: #ffcc00;
+    font-style: italic;
+    text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.8);
+}
+
+/* Paragraphs */
+p {
+    font-size: 19px;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: auto;
+    text-align: justify;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    border-style: outset;
+    border-width: 2px;
+    border-color: gold;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 196, 1, 0.923);
+    margin-bottom: 100px;
+    font-style: oblique;
+    
+}
+
+/* Album Section */
+.album-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 25px 0;
+    background: rgba(0, 0, 0, 0.9);
+    border-top: 3px solid #ffcc00;
+    border-bottom: 3px solid #ffcc00;
+    box-shadow: 0px 5px 15px rgba(255, 204, 0, 0.5);
+}
+
+.album-scroll {
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+
+.album {
+    margin: 15px;
+    width: 200px;
+    height: 200px;
+    border: 3px solid #ffcc00;
+    box-shadow: 0px 0px 15px rgba(255, 255, 0, 0.7);
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    filter: grayscale(30%);
+}
+
+.album:hover {
+    transform: scale(1.15);
+    filter: grayscale(0%);
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Song Lyrics */
+.lyrics {
+    background: #222;
+    padding: 25px;
+    border-left: 6px solid #ffcc00;
+    border-right: 6px solid #ffcc00;
+    text-align: left;
+    box-shadow: 0px 0px 15px rgba(255, 204, 0, 0.6);
+}
+
+pre span {
+    color: #ffcc00;
+    font-size: 20px;
+    font-family: 'Courier New', monospace;
+    line-height: 1.5;
+    text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.5);
+}
+
+/* Links */
+a[target="_blank"] {
+    color: #ffcc00;
+    text-decoration: underline;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px rgba(255, 204, 0, 0.7);
+}
+
+a[target="_blank"]:hover {
+    color: red;
+    text-shadow: 0px 0px 15px red;
+}
+
+/* Contact Form */
+footer {
+    background: linear-gradient(90deg, black, #660000);
+    padding: 25px 0;
+    margin-top: 25px;
+    border-top: 3px solid #ffcc00;
+    box-shadow: 0px -5px 15px rgba(255, 204, 0, 0.5);
+}
+
+footer a {
+    color: #ffcc00;
+    font-size: 22px;
+    text-decoration: none;
+    text-shadow: 0px 0px 5px rgba(255, 204, 0, 0.6);
+}
+
+footer a:hover {
+    color: red;
+    text-shadow: 0px 0px 15px red;
+}
+
+form {
+    margin-top: 15px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px rgba(255, 204, 0, 0.7);
+}
+
+.input-field {
+    padding: 10px;
+    width: 260px;
+    background: #333;
+    border: 2px solid #ffcc00;
+    color: white;
+    box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.5);
+    transition: 0.3s;
+}
+
+.input-field:focus {
+    border-color: red;
+    outline: none;
+    box-shadow: 0px 0px 15px red;
+}
